@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hotels",
+  "info": {
+    "singularName": "hotel",
+    "pluralName": "hotels",
+    "displayName": "Hotel",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "mobile": {
+      "required": true,
+      "unique": false,
+      "type": "biginteger"
+    },
+    "wifi": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "tv": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "washingmachine": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "furniture": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "size": {
+      "type": "string",
+      "required": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
