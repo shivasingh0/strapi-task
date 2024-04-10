@@ -5,7 +5,6 @@ import Card from "../components/Card";
 const Home = () => {
   return (
    <>
-   <Navbar/>
    <Card/>
    </>
   );
